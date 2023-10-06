@@ -283,6 +283,38 @@ html {
     padding: 0;
 }
 
+.button:hover {
+    animation: pulse 1s infinite alternate, colorChange 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: orangered;
+        color: magenta
+    }
+
+    50% {
+        background-color: palevioletred;
+        color: white;
+    }
+
+    100% {
+        background-color: darkolivegreen;
+        color: skyblue;
+    }
+}
+
+
 .button_text {
     color: #F26376;
     font-family: Lato;
@@ -456,13 +488,13 @@ html {
 }
 
 .footer_center_input:focus {
-    border: 0px solid #fff;
-    background-color: #fff;
+    border: 0px solid #c31b1b;
+    background-color: #380b0b;
 }
 
 .footer_center_input:active {
-    color: #F26376;
-    border: 1px solid #F16D7F;
+    color: #f2a363;
+    border: 1px solid #6dcef1;
 }
 
 .footer_center_button_div {
@@ -497,6 +529,24 @@ html {
 
 .footer_center_button:hover {
     animation: pulse 1s infinite alternate, colorChange 1s infinite alternate;
+}
+
+
+@keyframes colorChange {
+    0% {
+        background-color: orangered;
+        color: magenta
+    }
+
+    50% {
+        background-color: palevioletred;
+        color: white;
+    }
+
+    100% {
+        background-color: darkolivegreen;
+        color: skyblue;
+    }
 }
 
 .footer_center_button:active {
